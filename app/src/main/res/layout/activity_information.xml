@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/logoinfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/cName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoinfo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonstyle2"
+            android:hint="Enter Name "
+            android:padding="10dp"
+
+            android:textColor="#000000"
+            android:textColorHint="#5A5353"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/cphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonstyle2"
+            android:hint="Enter Phone Number "
+            android:padding="10dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#5A5353"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/cAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cphone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonstyle2"
+            android:hint="Enter Address "
+            android:padding="10dp"
+
+            android:textColor="#000000"
+            android:textColorHint="#5A5353"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Confirm Order"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

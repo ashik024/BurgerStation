@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/skip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/skip2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/deliveryman"
+        app:lottie_loop="true"
+        />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery"
+        android:textSize="30sp"
+        android:textColor="#D62863"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/lottie3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/title11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Time "
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#D62863"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/title111"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title11"
+        android:layout_marginLeft="50dp"
+        android:textColor="#D62863"
+
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Our Super Fast Delivery Team Insures Customers Gets Their Order On Time."
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:src="@drawable/tab2"
+        android:layout_below="@id/title111"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

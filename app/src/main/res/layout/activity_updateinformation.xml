@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Updateinformation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/nameofthefood"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/desofthefood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/nameofthefood"
+        />
+    <EditText
+        android:id="@+id/priceofthefood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/desofthefood"
+        />
+
+    <Button
+        android:id="@+id/saveinfo"
+        android:text="Save"
+        android:textStyle="bold"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_below="@id/priceofthefood"/>
+
+</RelativeLayout>

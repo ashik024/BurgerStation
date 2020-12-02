@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToCart">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar2"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/namef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Resturant"
+        android:layout_below="@+id/toolbar2"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/pricef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namef"
+        android:padding="10dp"
+        android:text="price"
+
+        android:layout_margin="10dp"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerf"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pricef"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/spice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricef"
+        android:padding="10dp"
+        android:text="Spice Level"
+
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricef"
+        android:padding="10dp"
+        android:text="Amount"
+        android:layout_toLeftOf="@+id/spinnerf"
+
+        android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spice"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/R1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mild"
+            android:textSize="15sp"
+            android:onClick="Check"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/R2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spicy"
+            android:textSize="15sp"
+            android:onClick="Check"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/R3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Spicy"
+            android:textSize="15sp"
+            android:onClick="Check"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/R4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naga"
+            android:textSize="15sp"
+            android:onClick="Check"
+            android:padding="10dp"
+            />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/advice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="EX: Add Extra Mayo"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_margin="3dp"/>
+
+    <Button
+        android:id="@+id/addcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add To Cart"
+        android:padding="10dp"
+        android:background="@drawable/buttonstyle"
+
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

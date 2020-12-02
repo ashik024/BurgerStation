@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:id="@+id/cardcart"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    >
+    <RelativeLayout
+        android:id="@+id/relafoodinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/buttonstyle2">
+
+        <TextView
+            android:id="@+id/ordername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="15dp"
+            android:paddingBottom="5dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/orderphone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="15dp"
+            android:layout_below="@id/ordername"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Address "
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="15dp"
+            android:layout_below="@id/orderphone"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="15dp"
+
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/orderprice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:gravity="right"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="15dp"
+            android:layout_below="@id/orderdate"
+            android:paddingBottom="5dp"/>
+
+        <Button
+            android:id="@+id/orderdetails"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:visibility="visible"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/address"
+            android:background="@drawable/buttonstyle"
+            android:text="Orders Details"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/shiporder"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/address"
+            android:background="@drawable/buttonstyle"
+            android:text="Ship Order"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/address"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:padding="5dp"
+            android:text="Order Shipped"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

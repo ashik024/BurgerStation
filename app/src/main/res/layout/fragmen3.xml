@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/skip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FDF9F9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie4"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/skip3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/happyyyy"
+        app:lottie_loop="true"
+        />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/lottie4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/title11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satisfaction"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/title111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title11"
+        android:layout_marginLeft="50dp"
+    android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Earning Customers Satisfaction Is Our Ultimate Goal. We Do Our Best to Earn Your Satisfaction. "
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:src="@drawable/tab3"
+        android:layout_below="@id/title111"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"/>
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/floatingbtn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fab_iconSrc="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/cartstyle"
+        android:backgroundTint="#F9FBF9"
+        />
+
+
+</RelativeLayout>

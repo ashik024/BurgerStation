@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:title="@string/app_name"
+            >
+
+            <ImageView
+                android:id="@+id/imageres"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nav_cart"
+        android:id="@+id/floatingbtn2"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginEnd="32dp"
+        android:tint="@color/cardview_light_background"
+
+        android:layout_alignParentRight="true"
+
+        
+
+
+
+
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+
+            android:id="@+id/relative22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/apBar">
+
+
+
+            <TextView
+                android:id="@+id/resname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:text="Takeout"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/resdelivary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="Free Delivery"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/resaddres2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resdelivary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="mon-fri-5:00-10:00pm"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="#575656"/>
+            <TextView
+                android:id="@+id/resaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resaddres2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="736 Rangs KB Square, Level - 3, Road - 9/a, Satmosjid Road, Dhanmondi Dhaka"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="#575656"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rescyMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/resaddress"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Spalsh">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:elevation="2dp"
+
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/background_logo"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/logoonly1"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="30dp"/>-->
+
+        <TextView
+            android:id="@+id/namelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:elevation="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="ℬ𝓊𝓇ℊℯ𝓇 𝒮𝓉𝒶𝓉𝒾ℴ𝓃"
+            android:textColor="#09570C"
+            android:textSize="50dp"
+
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:elevation="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@id/namelogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/splash"
+
+
+            />
+        <com.cuberto.liquid_swipe.LiquidPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+
+

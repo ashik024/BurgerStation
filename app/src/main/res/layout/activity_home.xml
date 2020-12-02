@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/tolrelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title="@string/app_name"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/searchRes"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_baseline_search_24"
+
+            />
+        <ImageView
+            android:id="@+id/floatingbtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+
+            />
+
+
+
+
+        <ScrollView
+            android:id="@+id/scl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_marginTop="60dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imgslide"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    app:auto_cycle="true"
+                    app:corner_radius="5"
+
+                    app:delay="0"
+                    app:period="5000" />
+
+                <RelativeLayout
+                    android:id="@+id/baroptionre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgslide">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/popular"
+                        android:layout_width="80dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:backgroundTint="@color/colorText">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/fire"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/fire" />
+
+                            <TextView
+                                android:id="@+id/pText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/fire"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Popular"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/toprated"
+                        android:layout_width="80dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/popular"
+                        android:backgroundTint="@color/colorText">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/stars"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/star" />
+
+                            <TextView
+                                android:id="@+id/sText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/stars"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="TopRated"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/newresturant"
+                        android:layout_width="80dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/toprated"
+                        android:backgroundTint="@color/colorText">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/newrest"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/newshoop" />
+
+                            <TextView
+                                android:id="@+id/nText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/newrest"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="New"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sale"
+                        android:layout_width="80dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/newresturant"
+                        android:backgroundTint="@color/colorText">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/sales"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/sale" />
+
+                            <TextView
+                                android:id="@+id/salText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/sales"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Discount"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/baroptionre">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recyHome"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/baroptionre"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                   />-->
+                <!--        <com.rey.material.widget.FloatingActionButton-->
+                <!--            android:id="@+id/floatingbtn"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_alignParentBottom="true"-->
+                <!--            android:layout_alignParentRight="true"-->
+                <!--            app:fab_iconSrc="@drawable/nav_cart"-->
+                <!--            android:layout_marginRight="15dp"-->
+                <!--            android:layout_marginBottom="15dp"-->
+                <!--            android:background="@drawable/cartstyle"-->
+                <!--            />-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/navhedder"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

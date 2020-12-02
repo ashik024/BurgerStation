@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/logo"
+        />
+    <EditText
+        android:id="@+id/nameS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name "
+
+        android:layout_below="@+id/logo"
+
+        android:background="@drawable/buttonstyle2"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#FFFFFF"
+
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/emailS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email "
+        android:layout_below="@+id/nameS"
+
+
+        android:background="@drawable/buttonstyle2"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <EditText
+    android:id="@+id/userIdS"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Create User Id"
+    android:layout_below="@+id/emailS"
+
+
+    android:background="@drawable/buttonstyle2"
+    android:padding="10dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:textColorHint="#FFFFFF"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"
+    android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/passwordS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password "
+        android:layout_below="@+id/userIdS"
+
+
+        android:background="@drawable/buttonstyle2"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/login2S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonstyle"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
